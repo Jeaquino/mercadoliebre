@@ -1,0 +1,31 @@
+.home_footer{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.home_footer section{
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home_footer section:last-child{
+    text-align: start;
+}
+.home_footer section i{
+    color: blue
+}
+
+@media (min-width: 768px ){
+    .home_footer section{
+        width: 30%;
+    }
+    .home_footer section:last-child{
+        width: 100%;
+
+    }
+}

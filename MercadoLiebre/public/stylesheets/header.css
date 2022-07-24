@@ -1,0 +1,121 @@
+header{
+    font-family: 'Roboto';
+    background-color: var(--ColorAmarillo);
+    padding: 5px 10px;
+}
+
+.header_section_1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_section_1 div{
+    width: 48%;
+}
+.header_section_1 div form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header_section_1 div form i{
+    display: block;
+    position: absolute;
+    right: 10%;
+}
+.header_section_1 div:last-child{
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.header_section_1 div img{
+    width: 100%;
+}
+
+.header_section_1 div form input{
+    width: 80%;
+}
+
+.header_section_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+}
+
+.header_section_2 div{
+    margin: 5px 0px;
+}
+
+.header_section_2 div a{
+    background-color: #4A79F9;
+    border: 1px solid gray;
+    padding: 2px;
+}
+
+.header_section_2 nav{
+    display: none;
+}
+
+.header_section_2 div a a:link, a:visited, a:active{
+    text-decoration:none;
+    color: black;
+}
+
+@media (min-width: 768px ){
+    
+    .header_section_1{
+        justify-content: space-between;
+    }
+    
+    .header_section_1 div{
+        width: 30%;
+    }
+
+    .header_section_1 img{
+        width: 100%;
+    }
+
+    .header_section_1 div:last-child{
+        width: 35%;
+        padding: 0;
+    }
+
+    .header_section_2 div{
+        display: none;
+    }
+
+    .header_section_2 nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header_section_2 nav ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+    }
+
+    .header_section_2 nav ul li{
+        padding: 5px;
+    }
+
+    .header_section_2 nav ul li a:link, a:visited, a:active{
+        text-decoration:none;
+    }
+
+    /* .header_section_1 div form i{
+        right: 10%;
+    } */
+}
+
+@media (min-width: 1024px ){
+
+}
