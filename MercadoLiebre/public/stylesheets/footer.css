@@ -17,7 +17,12 @@
     text-align: start;
 }
 .home_footer section i{
-    color: blue
+    color: blue;
+    transition: color,1s;
+}
+
+.home_footer section i:hover{
+    color: orange
 }
 
 @media (min-width: 768px ){

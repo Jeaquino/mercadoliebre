@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('./partials/head') %>
+<body>
+    <%-include('./partials/header') %>
+    <main class="login_main">
+        <div class="login_main_div">
+            <form action="/login">
+                <div class="login_container_inputs">
+                    <label for="">Usuario</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo" required minlength="3">    
+                    <label for="">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Ingrese contraseña" required minlength="8" >   
+                </div>
+                <div class="login_container_buttons"> 
+                    <input id="enviar" type="submit" value="Enviar">
+                    <input id="reset" type="reset" value="Resetear">    
+                </div>
+            </form>
+        </div>
+    </main>
+    <%-include('./partials/footer') %>
+</body>
+</html>
